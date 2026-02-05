@@ -24,7 +24,7 @@ This project implements a Variational Autoencoder (VAE) to encode and generate p
 ### Training
 To train the VAE, run the following command:
 ```bash
-python src/training.py --fasta_file data/example.fasta --epochs 50 --batch_size 32
+python src/training.py --fasta-file data/example.fasta --epochs 50 --batch-size 32
 ```
 This will train the VAE on the sequences in `data/example.fasta` for 50 epochs 
 using a batch size of 32.
@@ -34,7 +34,7 @@ changed using the `--output-weights` argument.
 ### Generating Sequences
 After training the VAE, you can generate new sequences by running:
 ```bash
-python src/sampling.py --weights vae_weights.pth --num_samples 10
+python src/sampling.py --weights vae-weights.pth --num-samples 10
 ```
 This will generate 10 new sequences using the trained VAE weights in 
 `generated_sequences.fasta` by default, but this can be changed using the 
